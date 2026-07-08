@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "feedsmanager"
+version = "0.1.0"
+description = "Cross-platform terminal RSS/Atom feed reader with auto-update"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "textual>=0.60",
+    "feedparser>=6.0",
+]
+authors = [
+    { name= "Vishesh Panchal", email="visheshpanchal145@gmail.com" }
+]
+
+[project.urls]
+Homepage = "https://github.com/visheshpanchal/feedsmanager"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=5"]
+
+[project.scripts]
+feedsmanager = "feedsmanager.app:main"
+
+[tool.setuptools.packages.find]
+include = ["feedsmanager*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.coverage.run]
+source = ["feedsmanager"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
