@@ -4,6 +4,11 @@ A cross-platform terminal (TUI) RSS/Atom feed reader built with [Textual](https:
 Add feeds by name + URL, refresh them on demand (or on an auto-refresh timer),
 and browse posts — all stored locally as JSON.
 
+[![PyPI version](https://img.shields.io/pypi/v/feedsmanager.svg)](https://pypi.org/project/feedsmanager/)
+[![Python versions](https://img.shields.io/pypi/pyversions/feedsmanager.svg)](https://pypi.org/project/feedsmanager/)
+[![PyPI downloads](https://img.shields.io/pypi/dm/feedsmanager.svg)](https://pypi.org/project/feedsmanager/)
+[![License](https://img.shields.io/pypi/l/feedsmanager.svg)](https://pypi.org/project/feedsmanager/)
+
 ## Features
 
 - Add / Edit / Remove feeds (name + RSS or Atom URL) — admin accounts only,
